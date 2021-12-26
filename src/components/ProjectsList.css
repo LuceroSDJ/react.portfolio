@@ -1,0 +1,5 @@
+.reposList {
+    display: flex;
+    cursor: pointer;
+    overflow: scroll;
+}

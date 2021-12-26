@@ -1,0 +1,16 @@
+.collectionCard {
+    color: rgb(255, 255, 255);
+    background-color: #1a1c1e;
+    border-radius: 20px;
+    width: 300px;
+    height: 420px;
+    overflow: hidden;
+    /* margin-right: 30px; */
+}
+.collectionCard > img {
+    width: 100%;
+
+}
+.details{
+    padding: 20px;
+}
