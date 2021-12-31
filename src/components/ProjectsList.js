@@ -20,6 +20,7 @@ const ProjectsList = ({reposListArray, setSelectedRepoID}) => {
                         name={repo.name}
                         description={repo.description}
                         code={repo.clone_url}
+                        // deployed={deployedLinks}
                         // image={repo...}
                     />
                 </div>
@@ -29,3 +30,11 @@ const ProjectsList = ({reposListArray, setSelectedRepoID}) => {
 }
 
 export default ProjectsList;
+
+
+// ACTIVE:
+// bamazon
+// clicky-game
+// friend-finder
+// React-notes
+// Share-GIFs

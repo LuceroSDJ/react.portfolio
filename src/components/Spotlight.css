@@ -1,45 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+
 .spotlight {
     max-height: 70vh;
+    /* position: relative; */
+    /* top: 200px; */
+    margin: 125px 150px 50px;
+    padding-top: 120px;
+    
+    
 }
 
 .spotlightContent {
     display: flex;
-    padding-bottom: 20px;
-    border-bottom: 1px solid fuchsia;
+    padding-bottom: 10px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    border: none;
+    height: 250px;
+    
+    /* max-height: 70vh; */
+    
 }
 .repoHighlight {
     display: flex;
-    flex: 0.25;
+    flex: 0.35;
     align-items: center;
-    justify-content: center;
+    justify-content: center;  
 }
 .repoContainer {
- border-radius: 20px;
- overflow: hidden;
- display: flex;
- margin-right: 20px;
-}
-.repoDetails {
+    border-radius: 20px;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 0.75;
+    margin-right: 15px;
+    background-color: black;
 }
 .selectedRepo {
     object-fit: contain;
     max-width: min(30vw, 40vh);
     max-height: 30vw;
 }
+.repoDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 0.65;
+    color: black;
+    
+}
+
 
 .title {
-    font-size: 65px;
-    font-weight: 800;
+    font-size: 40px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+ 
 }
 .itemDescription{
-    font-size: 30px;
+    font-size: 22px;
     align-self: center;
+    /* font-family: 'Raleway', sans-serif; */
+    color: black;
+    /* font-family: 'Cormorant Garamond', serif; */
 }
-
 .owner {
     display: flex;
     margin: 10px 0;
@@ -57,15 +84,41 @@
     /* object-fit: scale-down; */
     /* object-fit: contain; */
 }
-.ownerImageContainer > img {
+/* .ownerImageContainer > img {
     height: 100%;
     width: 100%;
-}
-.ownerDetails {
+} */
+.projectDetails {
     display: flex;
     align-self: center;
-    flex: 1;
+    flex: 0.4;
+    padding-left: 5%;
 }
-.ownerNameAndHandle {
-    flex: 1;
+.link {
+    display: flex;
+    /* flex-direction: column; */
+    align-content: center;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+.icon {
+    padding: 10px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+}
+
+.test {
+    display: flex;
+    align-self: center;
+    padding: 3px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.test > a {
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    color: black;
+    
 }

@@ -1,0 +1,70 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  /* aligns items vertically */
+    height: 100px;
+    color: hotpink;    
+}
+
+body {
+    background-color: antiquewhite;
+    /* background-color: black; */
+}
+.header > div {
+    margin: 10px;
+}
+
+.punkLogo {
+    width: 200px;
+}
+.searchBar {
+    background-color: #1c1c1e;
+    height: 50px;
+    flex: 1; /* takes up available horizontal spacee (se estira)*/
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+}
+.searchIconContainer {
+    margin: 10px;
+}
+.searchInput{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    color: white;
+}
+.headerItems {
+    display: flex;
+    /* justify-content: center; does not work bc of flex:1 */  
+}
+.headerItems > p {
+    margin: 10px;
+}
+.headerActions {
+    /* display: flex; */
+    /* align-items: center; */
+}
+.headerItems > div {
+
+}
+.darkModeContainer {
+    background-color: #1c1c1e;
+    border-radius: 50px;
+    padding: 15px;
+    /* display: flex; */
+    /* object-fit: contain; */ 
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.darkModeContainer > img {
+    height: 25px;
+}
+.loginButton {
+    background: linear-gradient(to right, #59f9b7, #66feea);
+    padding: 15px 40px;
+    border-radius: 50px;
+    color: black;
+}

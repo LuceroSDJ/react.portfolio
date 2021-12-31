@@ -4,6 +4,10 @@ import axios from 'axios';
 import Spotlight from './components/Spotlight';
 import ProjectsList from './components/ProjectsList';
 import { useState, useEffect } from 'react';
+import About from './components/About';
+// import NavBar from './components/NavBar';
+// import NavBar2 from './components/NavBar2';
+import Nav from './components/Nav';
 
 
 function App() {
@@ -35,6 +39,13 @@ function App() {
 
   return (
     <div>
+
+      {/* <NavBar /> */}
+      {/* <NavBar2 /> */}
+
+      <Nav />
+      <About />
+
       {
         reposListData.length > 0 && (
           <>
@@ -44,6 +55,8 @@ function App() {
           </>
         )
       }
+
+      
     </div>
   )
 }

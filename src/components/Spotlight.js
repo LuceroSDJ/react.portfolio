@@ -1,12 +1,28 @@
 import { waitForElementToBeRemoved } from '@testing-library/react';
 import React, {useState, useEffect} from 'react';
 import './Spotlight.css';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkIcon from '@mui/icons-material/Link';
+
+
 const Spotlight = ({selectedRepo, reposList}) => {
     
     const [activeRepo, setActiveRepo] = useState(reposList[0]);
+
+    const deployedLinks = [
+        'https://lucerosdj.github.io/bamazon/',
+        'https://lucerosdj.github.io/Clicky-Game/',
+        'https://gentle-dusk-25183.herokuapp.com/',
+        'https://lucerosdj.github.io/react-notes/',
+        'https://morning-ravine-20384.herokuapp.com/'
+    ]
+
+    const [liveLink, setLiveLink] = useState(deployedLinks[0]);
     
     useEffect(() => {
         setActiveRepo(reposList[selectedRepo]) 
+        setLiveLink(deployedLinks[selectedRepo])
+        console.log("deployedLinks[selectedRepo]", deployedLinks[selectedRepo])
     }, [selectedRepo])
 
     // *** Run useEffect on State Change ***
@@ -19,7 +35,7 @@ const Spotlight = ({selectedRepo, reposList}) => {
     // source:https://daveceddia.com/useeffect-hook-examples/
 
     return (
-        <div className='spotlight'>
+        <div className='spotlight' id='portfolio'>
             <div className='spotlightContent'>
 
                 <div className='repoHighlight'>
@@ -32,20 +48,37 @@ const Spotlight = ({selectedRepo, reposList}) => {
                 </div>
 
                 <div className='repoDetails' style={{color: 'fuchsia'}}>
-                    <div className='title'>{activeRepo.name}</div>
+                    <div className='title'>
+                        <bold>{activeRepo.name}</bold>
+                    </div>
                     <span className='itemDescription'>{activeRepo.description}</span>
                 </div>
 
-                <div className='owner'>
+                {/* <div className='owner'>
                     <div className='ownerImageContainer'>
                         <img src="https://picsum.photos/200" />
                     </div>
-                </div>
+                </div> */}
 
-                <div className='ownerDetails'>
-                    <div className='ownerNameAndHandle'>
-                        <div><a href={activeRepo.clone_url}>See code here!</a></div>
-                        <div className='ownerHandle'>@lucero.developer</div>
+                <div className='projectDetails'>
+                    <div className='projectLinkAndHandle'>
+                        <div className='link'>
+                            <div className='test'>
+                                <GitHubIcon className='icon' fontSize="large" />
+                            </div>
+                            <div className='test'>
+                                <a href={activeRepo.clone_url}>GitHub Repo</a>
+                            </div>
+                        </div>
+                        <div className='link'>
+                            <div className='test'>
+                                <LinkIcon className='icon' fontSize="large" />
+                            </div>
+                            <div className='test'>
+                                <a href={liveLink}>Check It Out</a>
+                            </div>
+                        </div>
+                        {/* <div className='ownerHandle'>@lucero.developer</div> */}
                     </div>
                 </div>
 
@@ -56,10 +89,5 @@ const Spotlight = ({selectedRepo, reposList}) => {
 
 export default Spotlight;
 
-// ACTIVE:
-// bamazon
-// clicky-game
-// friend-finder
-// React-notes
 
 

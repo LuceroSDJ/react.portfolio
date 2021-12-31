@@ -9,11 +9,11 @@ const ProjectCard = ({id, name, traits, image, description, code}) => {
             <div className='details'>
                 <div className='name'>
                     {name} 
-                    <div className='description'>{description}</div>
+                    {/* <div className='description'>{description}</div> */}
                 </div>
 
                 <div className='projectLinks'>
-                    <div>{code}</div>
+                    {/* <div>{code}</div> */}
                 </div>
             </div>
         </div>
