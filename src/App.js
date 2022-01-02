@@ -8,6 +8,8 @@ import About from './components/About';
 // import NavBar from './components/NavBar';
 // import NavBar2 from './components/NavBar2';
 import Nav from './components/Nav';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -45,18 +47,20 @@ function App() {
 
       <Nav />
       <About />
+      <div className='portfolio'>
+        {
+          reposListData.length > 0 && (
+            <>
+              <Spotlight reposList={reposListData} selectedRepo={selectedRepo}/>
+              <ProjectsList reposListArray={reposListData} setSelectedRepoID={setSelectedRepo} />  {/* stateful variables managing state */} 
+              {/* passed in the useState setter to ProjectsList but selectedRepoID piece of state is being handled here in app.js */}
+            </>
+          )
+        }
+      </div>
 
-      {
-        reposListData.length > 0 && (
-          <>
-            <Spotlight reposList={reposListData} selectedRepo={selectedRepo}/>
-            <ProjectsList reposListArray={reposListData} setSelectedRepoID={setSelectedRepo} />  {/* stateful variables managing state */} 
-            {/* passed in the useState setter to ProjectsList but selectedRepoID piece of state is being handled here in app.js */}
-          </>
-        )
-      }
-
-      
+      <Contact />
+      <Footer />
     </div>
   )
 }

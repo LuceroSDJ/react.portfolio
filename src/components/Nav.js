@@ -25,7 +25,9 @@ const Nav = () => {
                     </div>
                 </div>
 
-                <div className='actionButton'>SAY HI!</div>
+                <a href="mailto:lucero.atx1@gmail.com?subject=Job%20Opportunity" target="_blank" rel="noopener noreferrer" className='actionButton' >
+                    SAY HI!!!
+                </a>
             </nav>
 
         </header>

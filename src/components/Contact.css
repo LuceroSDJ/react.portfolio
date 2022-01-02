@@ -1,0 +1,45 @@
+#contact {
+    background: #fff;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center; 
+    align-items: center; 
+    padding: 60px 15px 30px 15px;
+    /* padding-bottom: 30px; */
+    /* position: relative;         ????????????*/  
+    /* position: relative; */
+    /* top: 100px; */
+    width: 90%;
+    margin: 140px auto 150px auto;
+    font-size: 20px;
+    line-height: 140%; 
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  
+  }
+
+  .social { 
+      display: flex;
+      list-style-type: none;
+  }
+
+.social > li {
+    padding: 18px;
+    margin: 15px;
+    font-size: 80px;
+    background: rgb(44, 43, 43);
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+.social > li > a {
+    color: white;
+
+}
+.linkedIn_icon:hover {
+    color: royalblue;
+}
+.email_icon:hover {
+    color: lightblue;
+}
+.gitHub_icon:hover {
+    color: gray;
+}

@@ -64,7 +64,9 @@ const Spotlight = ({selectedRepo, reposList}) => {
                     <div className='projectLinkAndHandle'>
                         <div className='link'>
                             <div className='test'>
-                                <GitHubIcon className='icon' fontSize="large" />
+                                <a href={activeRepo.clone_url}>
+                                    <GitHubIcon className='icon' fontSize="large" />
+                                </a>    
                             </div>
                             <div className='test'>
                                 <a href={activeRepo.clone_url}>GitHub Repo</a>
@@ -72,7 +74,9 @@ const Spotlight = ({selectedRepo, reposList}) => {
                         </div>
                         <div className='link'>
                             <div className='test'>
-                                <LinkIcon className='icon' fontSize="large" />
+                                <a href={liveLink}>
+                                    <LinkIcon className='icon' fontSize="large" />
+                                </a> 
                             </div>
                             <div className='test'>
                                 <a href={liveLink}>Check It Out</a>
