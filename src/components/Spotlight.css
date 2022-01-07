@@ -7,8 +7,10 @@
     max-height: 70vh;
     /* position: relative; */
     /* top: 200px; */
-    margin: 125px 150px 50px;
+    /* margin: 125px 150px 50px; */
     padding-top: 120px;
+    /* width: 100%; */
+    margin: 0 auto 50px;
     
     
 }
@@ -21,6 +23,7 @@
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
     border: none;
     height: 250px;
+    width: 100%;
     
     /* max-height: 70vh; */
     
@@ -123,4 +126,31 @@
     font-family: 'Cormorant Garamond', serif;
     color: black;
     
+}
+
+@media only screen and (max-width: 600px) {
+    .spotlight {
+        margin: 0 auto 10px;
+    }
+    .repoHighlight {
+        display: none;
+    }
+    .spotlightContent {
+        flex-direction: column;
+    }
+    .projectLinkAndHandle {
+        display: flex;
+    }
+    .title, .itemDescription {
+        margin: 0 auto;
+        padding: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
 }

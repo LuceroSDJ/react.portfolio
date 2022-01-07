@@ -12,6 +12,7 @@
     display: flex;
     cursor: pointer;
     overflow: scroll;
+    box-sizing: border-box;
     /* position: relative; */
     /* top: 250px; */
 
@@ -22,5 +23,12 @@
 }
 .scrollArrows {
     text-align: center;
-    padding: 2%;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+    .reposList {
+        height: 250px;
+    }
 }
