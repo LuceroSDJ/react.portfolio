@@ -19,7 +19,7 @@ const Nav = () => {
                     <p><a class="nav-link" href="#contact">Contact</a></p>
                 </div>
 
-                <div className='headerActions'>
+                {/* <div className='headerActions'>
                     <div className='darkModeContainer'> 
                         <img src={themeSwitchIcon} />
                     </div>
@@ -27,7 +27,7 @@ const Nav = () => {
 
                 <a href="mailto:lucero.atx1@gmail.com?subject=Job%20Opportunity" target="_blank" rel="noopener noreferrer" className='actionButton' >
                     SAY HI!!!
-                </a>
+                </a> */}
             </nav>
 
         </header>
