@@ -8,22 +8,25 @@ import LinkIcon from '@mui/icons-material/Link';
 const Spotlight = ({selectedRepo, reposList}) => {
     
     const [activeRepo, setActiveRepo] = useState(reposList[0]);
+    
 
-    const deployedLinks = [
-        'https://lucerosdj.github.io/bamazon/',
-        'https://lucerosdj.github.io/Clicky-Game/',
-        'https://gentle-dusk-25183.herokuapp.com/',
-        'https://lucerosdj.github.io/react-notes/',
-        'https://morning-ravine-20384.herokuapp.com/'
-    ]
+    // testing in progress: I want to dynamically retrieve the deployed URL instead of hard coding it 
+    // const deployedLinks = [
+    //     'https://lucerosdj.github.io/bamazon/',
+    //     'https://lucerosdj.github.io/Clicky-Game/',
+    //     'https://gentle-dusk-25183.herokuapp.com/',
+    //     'https://lucerosdj.github.io/react-notes/',
+    //     'https://morning-ravine-20384.herokuapp.com/'
+    // ]
 
-    const [liveLink, setLiveLink] = useState(deployedLinks[0]);
+    // const [liveLink, setLiveLink] = useState(deployedLinks[0]);
     
     useEffect(() => {
         setActiveRepo(reposList[selectedRepo]) 
-        setLiveLink(deployedLinks[selectedRepo])
-        console.log("deployedLinks[selectedRepo]", deployedLinks[selectedRepo])
-    }, [selectedRepo])
+        console.log("activeRepo.homepage", activeRepo.homepage);
+        // setLiveLink(deployedLinks[selectedRepo])
+        // console.log("deployedLinks[selectedRepo]", deployedLinks[selectedRepo])
+    }, [selectedRepo, reposList])
 
     // *** Run useEffect on State Change ***
     // By default, useEffect runs after every render, 
@@ -74,12 +77,12 @@ const Spotlight = ({selectedRepo, reposList}) => {
                         </div>
                         <div className='link'>
                             <div className='test'>
-                                <a href={liveLink}>
+                                <a href={activeRepo.homepage}>
                                     <LinkIcon className='icon' fontSize="large" />
                                 </a> 
                             </div>
                             <div className='test'>
-                                <a href={liveLink}>Check It Out</a>
+                                <a href={activeRepo.homepage}>Check It Out</a>
                             </div>
                         </div>
                         {/* <div className='ownerHandle'>@lucero.developer</div> */}
