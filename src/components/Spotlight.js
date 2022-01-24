@@ -5,7 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkIcon from '@mui/icons-material/Link';
 
 
-const Spotlight = ({selectedRepo, reposList}) => {
+const Spotlight = ({selectedRepo, reposList,selectedImage}) => {
     
     const [activeRepo, setActiveRepo] = useState(reposList[0]);
     
@@ -20,10 +20,12 @@ const Spotlight = ({selectedRepo, reposList}) => {
     // ]
 
     // const [liveLink, setLiveLink] = useState(deployedLinks[0]);
+    const [repoImage, setRepoImage] = useState(selectedImage[0]);
     
     useEffect(() => {
         setActiveRepo(reposList[selectedRepo]) 
         console.log("activeRepo.homepage", activeRepo.homepage);
+        setRepoImage(selectedImage[selectedRepo]);
         // setLiveLink(deployedLinks[selectedRepo])
         // console.log("deployedLinks[selectedRepo]", deployedLinks[selectedRepo])
     }, [selectedRepo, reposList])
@@ -44,7 +46,8 @@ const Spotlight = ({selectedRepo, reposList}) => {
                 <div className='repoHighlight'>
                     <div className='repoContainer'>
                         <img  className='selectedRepo' 
-                            src="https://cdn-icons-png.flaticon.com/128/1640/1640650.png"
+                            // src="https://cdn-icons-png.flaticon.com/128/1640/1640650.png"
+                            src={repoImage}
                             alt='repo-image' 
                         />
                     </div>

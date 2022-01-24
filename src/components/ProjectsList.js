@@ -6,13 +6,17 @@ import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArro
 
 // loop through reposListData
 // passed useState setter to set (onClick) the selected repo index from this component itself which is a 'child component' to App
-const ProjectsList = ({reposListArray, setSelectedRepoID}) => {
+const ProjectsList = ({reposListArray, setSelectedRepoID, image_srcs}) => {
+
+    
 
     return (
         <div className='listContainer'>
 
             <div className='reposList'>
+                
                 {reposListArray.map((repo, index) => (
+
                 
                     <div onClick={() => setSelectedRepoID(index)}>
 
@@ -24,7 +28,7 @@ const ProjectsList = ({reposListArray, setSelectedRepoID}) => {
                             description={repo.description}
                             code={repo.clone_url}
                             // deployed={deployedLinks}
-                            // image={repo...}
+                            image={image_srcs[index]}
                         />
                     </div>
                 ))}  

@@ -4,8 +4,8 @@ import './ProjectCard.css';
 const ProjectCard = ({id, name, traits, image, description, code}) => {
     return (
         <div className='collectionCard'>
-            <img src="https://cdn-icons-png.flaticon.com/128/1640/1640650.png" alt='technologies image' />
-
+            <img src={image} alt='landing page screenshot' />
+            {/* "https://cdn-icons-png.flaticon.com/128/1640/1640650.png" */}
             <div className='details'>
                 <div className='name'>
                     {name} 
