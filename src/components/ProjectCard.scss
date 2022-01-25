@@ -1,0 +1,15 @@
+$color: white;
+
+.name {
+    color: $color;
+    &:hover {
+        color: blue;
+    }
+}
+
+.collectionCard > img {
+    height: 80%;
+    &:hover {
+        height: 100%;
+    }
+}
