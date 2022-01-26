@@ -154,8 +154,8 @@
     width: 100%;
 } */
 .itemDescription {
-    overflow: scroll;
-    font-size: 12px;
+    /* overflow: scroll; */
+    /* font-size: 12px; */
 }
 
 }

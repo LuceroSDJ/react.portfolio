@@ -65,6 +65,7 @@ $breakpoints: (phone: 320px, phone2:480px, tablet: 768px, desktop: 1024px);
     font-size: 20px;
     align-self: center;
     color: black;
+    overflow: scroll;
     @include media('<phone') {
         margin: 0 auto;
         padding: 10px;
