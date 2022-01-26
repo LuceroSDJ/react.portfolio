@@ -1,6 +1,7 @@
 import { waitForElementToBeRemoved } from '@testing-library/react';
 import React, {useState, useEffect} from 'react';
 import './Spotlight.css';
+import './Spotlight.scss';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkIcon from '@mui/icons-material/Link';
 

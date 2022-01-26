@@ -1,15 +1,50 @@
+@import './breakpoints.scss';
+$breakpoints: (phone: 320px, phone2:480px, tablet: 768px, desktop: 1024px);
 $color: white;
 
+.collectionCard {
+    color: rgb(255, 255, 255);
+    background-color: #1a1c1e;
+    border-radius: 20px;
+    width: 300px;
+    height: 345px;
+    overflow: hidden;
+    margin: 5px;
+    /* margin-right: 30px; */
+    box-sizing: border-box;
+
+    @include media("<phone2") {
+        height: 230px;
+        width: 180px;   
+    }
+    @include media(">phone2", "<=tablet") {
+        height: 230px;
+        width: 180px;
+    }
+
+   
+}
+
 .name {
+    padding-top: 1px;
+    text-align: center;
+    font-size: 30px;
     color: $color;
     &:hover {
         color: blue;
+    }
+    @include media("<phone", "<=tablet") {
+        font-size: 22px;
+        padding-top: 8px;
+        font-weight: 700;
     }
 }
 
 .collectionCard > img {
     height: 80%;
+    width: 100%;
     &:hover {
         height: 100%;
     }
+   
 }

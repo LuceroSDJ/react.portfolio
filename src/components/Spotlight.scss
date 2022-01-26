@@ -1,0 +1,128 @@
+@import './breakpoints.scss';
+$breakpoints: (phone: 320px, phone2:480px, tablet: 768px, desktop: 1024px);
+
+.repoHighlight {
+    display: flex;
+    flex: 0.35;
+    align-items: center;
+    justify-content: center; 
+    padding-left: 15px;
+
+    @include media('<phone2') {
+        display: none;
+       
+    }
+
+    @include media('>phone2', "<=tablet") {
+        flex: 0.30;
+    }
+}
+.repoContainer {
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    margin-right: 15px;
+    background-color: black;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+.selectedRepo {
+    object-fit: contain;
+    max-width: min(35vw, 40vh);
+    max-height: 35vw;
+
+    @include media('>phone2', "<=tablet") {
+        max-width: min(25vw, 30vh);
+        max-height: 25vw;
+        // height: 300px;
+    }
+}
+
+
+
+
+
+
+
+.title {
+    font-size: 40px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+
+    @include media('<phone') {
+        font-size: 25px;
+        font-weight: 600;
+        padding-bottom: 0px;
+    }
+    @include media('<phone2') {
+        font-size: 32px;
+        padding-bottom: 0px;
+    }
+ 
+}
+
+.itemDescription{
+    font-size: 20px;
+    align-self: center;
+    color: black;
+    @include media('<phone') {
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    @include media('<phone2') {
+        font-size: 14px;
+    }
+   
+}
+
+
+.projectDetails {
+    display: flex;
+    align-self: center;
+    flex: 0.4;
+    padding-left: 5%;
+
+    @include media('<phone') {
+        padding-left: 2%;
+    }
+}
+
+.icon {
+    padding: 10px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+
+    @include media('<phone') {  
+        padding: 2px;
+        font-size: small !important;
+    }
+    
+    @include media('<phone2') {  
+        padding: 8px;
+    }
+
+    @include media('>=phone2', '<=tablet') {
+        padding: 10px;
+    }
+}
+
+.test {
+    display: flex;
+    align-self: center;
+    padding: 3px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.test > a {
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    color: black;
+    @include media('<phone') {
+        font-size: 13px;
+    }
+}

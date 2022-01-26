@@ -1,5 +1,4 @@
 import React from 'react';
-import './ProjectCard.css';
 import './ProjectCard.scss';
 
 const ProjectCard = ({id, name, traits, image, description, code}) => {
