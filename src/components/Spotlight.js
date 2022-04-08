@@ -56,7 +56,7 @@ const Spotlight = ({selectedRepo, reposList,selectedImage}) => {
 
                 <div className='repoDetails' style={{color: 'fuchsia'}}>
                     <div className='title'>
-                        <bold>{activeRepo.name}</bold>
+                        {activeRepo.name}
                     </div>
                     <span className='itemDescription'>{activeRepo.description}</span>
                 </div>

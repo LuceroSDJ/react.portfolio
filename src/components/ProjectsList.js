@@ -18,7 +18,7 @@ const ProjectsList = ({reposListArray, setSelectedRepoID, image_srcs}) => {
                 {reposListArray.map((repo, index) => (
 
                 
-                    <div onClick={() => setSelectedRepoID(index)}>
+                    <div key={repo.id} onClick={() => setSelectedRepoID(index)}>
 
                     {/* the state of selectedRepo is handled in App.js */}
                         <ProjectCard 

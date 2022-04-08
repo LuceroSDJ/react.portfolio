@@ -58,10 +58,6 @@ function App() {
 
   return (
     <div>
-
-      {/* <NavBar /> */}
-      {/* <NavBar2 /> */}
-
       <Nav />
       <About />
       <div className='portfolio'>

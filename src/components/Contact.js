@@ -13,23 +13,23 @@ const Contact = () => {
 
 
             <div className='socialNetworks'>
-                <ul class="social">
+                <ul className="social">
                     <li>
-                        <a href="https://www.linkedin.com/in/lucero-sandoval-38161b174" target="_blank" rel="noopener noreferrer" class="linkedIn_icon" >
+                        <a href="https://www.linkedin.com/in/lucero-sandoval-38161b174" target="_blank" rel="noopener noreferrer" className="linkedIn_icon" >
                             <LinkedInIcon sx={{ fontSize: 60 }} />
                         </a>
                         {/* <span class="sr-only">linkedIn portfolio (opens in a new tab)</span> */}
                     </li>
 
                     <li>
-                        <a href="mailto:lucero.atx1@gmail.com?subject=Job%20Opportunity" target="_blank" rel="noopener noreferrer" class='email_icon' >
+                        <a href="mailto:lucero.atx1@gmail.com?subject=Job%20Opportunity" target="_blank" rel="noopener noreferrer" className='email_icon' >
                             <EmailIcon sx={{ fontSize: 60 }} />
                         </a>
                         {/* <span class="sr-only">new email form (opens in a new window)</span> */}
                     </li>
 
                     <li>
-                        <a href="https://github.com/LuceroSDJ" target="_blank" rel="noopener noreferrer" class='gitHub_icon' >
+                        <a href="https://github.com/LuceroSDJ" target="_blank" rel="noopener noreferrer" className='gitHub_icon' >
                             <GitHubIcon sx={{ fontSize: 60 }} />
                         </a>
                         {/* <span class="sr-only">github portfolio (opens in a new tab)</span> */}

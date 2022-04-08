@@ -9,7 +9,7 @@ function About() {
     //revise line 7 id & class?
     <div id="about">   
         <div className="bio">
-            <bold><h2>Hello, world! My name is Carmen Lucero.</h2></bold>
+            <h2>Hello, world! My name is Carmen Lucero.</h2>
             <h3>I am a highly motivated web developer based in Austin, Texas. </h3>
             <p>I have embarked in the journey of changing careers, and I have fallen in love with the great variety of technologies and resources available for driven individuals like me. 
                 My background is in social work and customers relations. Therefore, I posses a particular set of transferrable skills including problem-solving, leadership, teamwork, and a high sense of responsibility.</p>
@@ -20,7 +20,7 @@ function About() {
         
 
 
-        <div class="contactMe">
+        <div className="contactMe">
 
             <div className="myPortrait">
 
@@ -32,7 +32,7 @@ function About() {
                 <p>I look forward to hearing from you.</p>
                 <a href="mailto:lucero.atx1@gmail.com?subject=Job%20Opportunity"> 
                     {/* <img src="./images/email_icon.png"  class="contactEmail"> */}
-                    <i class="fas fa-envelope logo contactEmail"></i>
+                    <i className="fas fa-envelope logo contactEmail"></i>
                 </a>
                 {/* <span class="sr-only">new email form (opens in a new window) </span> */}
             </div>
