@@ -34,11 +34,11 @@ const ProjectsList = ({reposListArray, setSelectedRepoID, image_srcs}) => {
                 ))}  
             </div>
 
-            <div className='scrollArrows'>
+            {/* <div className='scrollArrows'>
                 <KeyboardDoubleArrowLeftIcon sx={{color: 'pink'}} />
                 <KeyboardDoubleArrowRightIcon />
 
-            </div>
+            </div> */}
         </div>
         
 
