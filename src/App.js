@@ -11,6 +11,7 @@ import Nav from './components/Nav';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import bamazon from './images/bamazon1.png';
+import memoryGame from './images/memoryGame.png';
 import notes from './images/react-notes.png';
 import giphyAPI from './images/giphyAPI.png';
 import to_do from './images/to-do.png';
@@ -28,6 +29,7 @@ function App() {
   // ]
   const images = [
     bamazon,
+    memoryGame,
     notes,
     giphyAPI,
     to_do
