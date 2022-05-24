@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/react.portfolio/static/css/main.d9b39e9b.css",
-    "main.js": "/react.portfolio/static/js/main.db9b41e5.js",
+    "main.js": "/react.portfolio/static/js/main.5f642143.js",
     "static/js/787.cf250828.chunk.js": "/react.portfolio/static/js/787.cf250828.chunk.js",
     "static/media/IMG_8902.jpeg": "/react.portfolio/static/media/IMG_8902.6fd7d9b361f2279c3a7d.jpeg",
+    "static/media/memoryGame.png": "/react.portfolio/static/media/memoryGame.f2027508570f71886dd1.png",
     "static/media/bamazon1.png": "/react.portfolio/static/media/bamazon1.5631004839237d52e94e.png",
     "static/media/to-do.png": "/react.portfolio/static/media/to-do.2daf01db8e1456b5511b.png",
     "static/media/giphyAPI.png": "/react.portfolio/static/media/giphyAPI.8207aaccfe2d565e39e4.png",
@@ -11,11 +12,11 @@
     "static/media/logo.svg": "/react.portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/react.portfolio/index.html",
     "main.d9b39e9b.css.map": "/react.portfolio/static/css/main.d9b39e9b.css.map",
-    "main.db9b41e5.js.map": "/react.portfolio/static/js/main.db9b41e5.js.map",
+    "main.5f642143.js.map": "/react.portfolio/static/js/main.5f642143.js.map",
     "787.cf250828.chunk.js.map": "/react.portfolio/static/js/787.cf250828.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d9b39e9b.css",
-    "static/js/main.db9b41e5.js"
+    "static/js/main.5f642143.js"
   ]
 }
