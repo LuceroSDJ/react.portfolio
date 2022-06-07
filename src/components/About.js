@@ -16,6 +16,7 @@ function About() {
             <p>As a lifelong learner, I have also enjoyed exploring programming languages, frameworks, and libraries such as JavaScript, Python, jQuery, React, node.js, and express.</p>
             {/* <p>I am currently looking for an opportunity to soar in the tech industry.</p> */}
             <p>I welcome the type of challenge that helps me grow as a web developer, and I would love to have the opportunity to master the technologies specific to your team. </p>
+            <p>I invite you to further discuss how my qualifications will be beneficial to your organization's success.</p>
         </div>
         
 
@@ -28,7 +29,6 @@ function About() {
             </div>
 
             <div className="invite">
-                <p>I invite you to further discuss my qualifications with you.</p>
                 <p>I look forward to hearing from you.</p>
                 <a href="mailto:lucero.atx1@gmail.com?subject=Job%20Opportunity"> 
                     {/* <img src="./images/email_icon.png"  class="contactEmail"> */}
